@@ -1,26 +1,24 @@
-// Calculator.js
 import { useState } from 'react';
-import './Calculator.css'; // Import CSS for Calculator component if needed
+import './Calculator.css';
 
-// คอมโพเนนต์เครื่องคิดเลข
 const Calculator = () => {
-    const [input, setInput] = useState(''); // state สำหรับเก็บค่าที่ใส่เข้ามา
+    const [input, setInput] = useState('');
 
-    // ฟังก์ชันจัดการการกดปุ่มตัวเลขและเครื่องหมาย
+
     const handleClick = (value) => {
         setInput(input + value);
     };
 
-    // ฟังก์ชันคำนวณผลลัพธ์
+
     const handleCalculate = () => {
         try {
-            setInput(eval(input).toString()); // eval ใช้ในการคำนวณ แต่ควรใช้อย่างระมัดระวัง
+            setInput(eval(input).toString());
         } catch (error) {
-            setInput('Error'); // แสดง Error หากมีการคำนวณผิดพลาด
+            setInput('Error');
         }
     };
 
-    // ฟังก์ชันล้างค่า
+
     const handleClear = () => {
         setInput('');
     };

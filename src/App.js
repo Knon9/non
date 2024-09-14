@@ -1,8 +1,6 @@
-// App.js
 import './App.css';
-import Calculator from './Calculator'; // Import the Calculator component
+import Calculator from './Calculator'; 
 
-// คอมโพเนนต์หลัก (App)
 const App = () => {
   return (
     <div className="App">
