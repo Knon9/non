@@ -13,11 +13,18 @@
   color: white;
 }
 
+.calculators {
+  display: flex;
+  flex-wrap: wrap; /* จัดการวางแบบหลายแถว */
+  justify-content: center;
+  gap: 20px; /* ระยะห่างระหว่างเครื่องคิดเลข */
+}
+
 .calculator {
-  display: inline-block;
   background-color: #333;
   padding: 20px;
   border-radius: 10px;
+  display: inline-block;
 }
 
 input {
@@ -32,7 +39,7 @@ input {
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* สร้าง 4 คอลัมน์ */
+  grid-template-columns: repeat(4, 1fr); /* 4 คอลัมน์ */
   gap: 10px;
 }
 
@@ -53,14 +60,4 @@ button:hover {
 
 button:active {
   background-color: #aaa;
-}
-
-/* จัดการช่องว่างที่ไม่ต้องการ */
-button.empty {
-  visibility: hidden;
-}
-
-/* ปุ่ม 0 จะกว้างเป็น 2 คอลัมน์ */
-button.zero {
-  grid-column: span 2;
 }
