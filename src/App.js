@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './Pages/Home';
 import CalculatorPage from './Pages/Calculator';
 import ClockPage from './Pages/Clock';
+import TimerPage from './Pages/Timer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/calculator">Calculator</Link></li>
             <li><Link to="/clock">Clock</Link></li>
+            <li><Link to="/timer">Timer</Link></li>
           </ul>
         </nav>
         
@@ -20,6 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/calculator" element={<CalculatorPage />} />
           <Route path="/clock" element={<ClockPage />} />
+          <Route path="/timer" element={<TimerPage />} />
         </Routes>
       </div>
     </Router>
