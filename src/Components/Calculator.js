@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Calculator.css';
+import './../Styles/Calculator.css';
 
 const Calculator = () => {
     const [input, setInput] = useState('');
@@ -12,6 +12,7 @@ const Calculator = () => {
 
     const handleCalculate = () => {
         try {
+            // eslint-disable-next-line
             setInput(eval(input).toString());
         } catch (error) {
             setInput('Error');

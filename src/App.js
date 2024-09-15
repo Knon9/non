@@ -1,17 +1,28 @@
-import './App.css';
-import Calculator from './Calculator'; 
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './Pages/Home';
+import CalculatorPage from './Pages/Calculator';
+import ClockPage from './Pages/Clock';
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>เครื่องคิดเลข</h1>
-        <div className="calculators">
-          {/* นำคอมโพเนนต์เครื่องคิดเลขมาใช้ 5 ครั้ง */}
-          <Calculator />
-        </div>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/calculator">Calculator</Link></li>
+            <li><Link to="/clock">Clock</Link></li>
+          </ul>
+        </nav>
+        
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/calculator" element={<CalculatorPage />} />
+          <Route path="/clock" element={<ClockPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
