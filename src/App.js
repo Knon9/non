@@ -5,6 +5,8 @@ import CalculatorPage from './Pages/Calculator';
 import ClockPage from './Pages/Clock';
 import TimerPage from './Pages/Timer';
 import FetchDataPage from './Pages/FetchData';
+import GetFetchFromBtnPage from './Pages/GetFetchFromBtnn'; 
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
             <li><Link to="/clock">Clock</Link></li>
             <li><Link to="/timer">Timer</Link></li>
             <li><Link to="/fetchData">FetchData</Link></li>
+            <li><Link to="/getFetchFromBtn">GetFetchFromBtn</Link></li>
           </ul>
         </nav>
         
@@ -26,6 +29,7 @@ function App() {
           <Route path="/clock" element={<ClockPage />} />
           <Route path="/timer" element={<TimerPage />} />
           <Route path="/fetchData" element={<FetchDataPage />} />
+          <Route path="/getFetchFromBtn" element={<GetFetchFromBtnPage />} />
         </Routes>
       </div>
     </Router>
