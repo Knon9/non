@@ -7,7 +7,7 @@ import TimerPage from './Pages/Timer';
 import FetchDataPage from './Pages/FetchData';
 import GetFetchFromBtnPage from './Pages/GetFetchFromBtnn'; 
 import LoginPage from './Pages/Login'; 
-
+import ImageGalleryPage from './Pages/ImageGallery'; 
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
             <li><Link to="/fetchData">FetchData</Link></li>
             <li><Link to="/getFetchFromBtn">GetFetchFromBtn</Link></li>
             <li><Link to="/login">Login</Link></li>
+            <li><Link to="/imageGallery">ImageGallery</Link></li>
           </ul>
         </nav>
         
@@ -33,6 +34,7 @@ function App() {
           <Route path="/fetchData" element={<FetchDataPage />} />
           <Route path="/getFetchFromBtn" element={<GetFetchFromBtnPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/imageGallery" element={<ImageGalleryPage />} />
         </Routes>
       </div>
     </Router>

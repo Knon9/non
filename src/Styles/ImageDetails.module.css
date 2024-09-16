@@ -1,0 +1,21 @@
+.detailsContainer {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeButton {
+    background: #ff5c5c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,41 @@
+.cardContainer {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.cardContainer:hover {
+    border-color: #00f;
+}
+
+.title {
+    text-align: center;
+    cursor: pointer;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 150px;
+    /* ตั้งความสูงให้เท่ากัน */
+    object-fit: cover;
+    /* ปรับขนาดของรูปภาพให้พอดี */
+    cursor: pointer;
+}
+
+.removeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ff5c5c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
